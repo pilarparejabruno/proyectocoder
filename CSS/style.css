@@ -118,3 +118,15 @@
 .about__item {
   list-style-type: none;
 }
+/* nosotros estilos */
+.casavieja {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(../imagenes/NOSOTROS-CASAVIEJA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: right;
+  margin: 0.5rem 0;
+  padding: 5rem 0;
+}
