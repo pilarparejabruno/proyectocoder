@@ -13,7 +13,6 @@
 .navbar-collapse {
   justify-content: center;
   align-items: center;
-  font-size: 16px;
 }
 .nav__item {
   list-style: none;
@@ -35,12 +34,14 @@
   width: 100%;
 }
 .nav__link {
+  text-align: center;
   text-decoration: none;
   color: black;
-  font-size: 17px;
+  font-size: 14px;
 }
 .hero {
-  margin: 4rem 0;
+  margin: 2rem 0;
+  padding: 2rem 0;
   color: black;
 }
 .video {
@@ -59,7 +60,7 @@
   z-index: 2;
   margin: 0 auto;
   max-width: 720px;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +75,6 @@
 }
 .hero__subtittle {
   font-size: 25px;
-  margin: 0.5rem 0;
 }
 .hero__description {
   text-align: center;
@@ -83,7 +83,6 @@
 .section {
   position: relative;
   padding-top: 2rem;
-  background-color: #594c32d3;
 }
 .section__content {
   text-align: center;
@@ -134,7 +133,7 @@
 }
 .social__link {
   color: black;
-  font-size: 15px;
+  font-size: 16px;
 }
 .footer__about {
   font-family: "Zilla Slab", serif;
@@ -156,6 +155,22 @@
   }
   .galery__content {
     text-align: left;
+    padding-bottom: 1.5rem;
+  }
+  .carousel {
+    margin: 2rem 1rem;
+    max-width: 800px;
+    width: 400px;
+    height: 300px;
+  }
+  .carousel-item {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width: 1020px) {
+  .nav__link {
+    font-size: 17px;
   }
   .carousel {
     margin: 2rem 1rem;
@@ -167,15 +182,17 @@
     width: 800px;
     height: 400px;
   }
+  .section__img {
+    width: 500px;
+    height: 300px;
+    padding-bottom: 1.5rem;
+  }
 }
 /* nosotros estilos */
 .body__nosotros {
-  background-color: #594c32dc;
+  background-color: #594c32e3;
 }
-.hero {
-  padding: 3rem 0;
-}
-.casavieja {
+.section__antepasado {
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(../imagenes/NOSOTROS-CASAVIEJA.jpg);
   background-repeat: no-repeat;
@@ -186,7 +203,7 @@
   margin: 0.5rem 0;
   padding: 8rem 0;
 }
-.elpueblo {
+.section__elpueblo {
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(../imagenes/NOSOTROS-PUEBLO.jpg);
   background-repeat: no-repeat;
@@ -194,6 +211,38 @@
   background-position: center;
   color: white;
   text-align: left;
-  margin: 3rem 0;
+  margin: 2rem 0;
   padding: 8rem 0;
+}
+
+/*contacto estilos*/
+.section__info {
+  text-align: center;
+}
+.info-iconos svg {
+  width: 50px;
+  height: 70px;
+}
+.section__hero {
+  text-align: center;
+  color: white;
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #594c32e3;
+}
+/* explora el lodge estilos */
+.article {
+  background-color: #f2f4f4;
+  text-align: center;
+  margin: 3rem 4rem;
+  padding: 3rem;
+}
+.article__img {
+  width: 500px;
+  height: 400px;
+}
+.tittle {
+  margin-top: 5rem;
 }
